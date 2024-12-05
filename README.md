@@ -6,7 +6,7 @@ In this project, we implement and compare popular ML methods for voice recogniti
 
 ## Dataset preperation
 
-We use the [VoxCeleb1](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox1.html) dataset, containing 1211 celebrities, 21,819 videos, and 153,516 audio clips.
+We use the [VoxCeleb1](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox1.html) dataset, containing 1211 celebrities, 21,819 videos, and 153,516 audio clips. For illustrating a more powerful result, we only sample 200 speakers for the voice classification task.
 
 ## Environment
 
@@ -17,4 +17,11 @@ Please use ```requirements.txt``` to install all the dependencies.
 
 ## DL algorithms
 
-Please refer to ```DL VoxCeleb analysis.ipynb``` for the DL-based methods.
+Please refer to ```DL VoxCeleb analysis.ipynb``` for the DL-based methods. We tired:
+
+- Traditional audio features as the input for MLP models (3 different sizes)
+- HuBert Model, which is too large for our computation resource and is abandoned
+- Wav2Vec model, a pretrained audio analysis model, reaches the highest performance
+- YAMNet, a pretrained sound event detection model, not suitable for speaker identification
+
+
