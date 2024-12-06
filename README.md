@@ -14,6 +14,12 @@ Please use ```requirements.txt``` to install all the dependencies.
 
 ## ML algorithms
 
+Please refer to ```ML VoxCeleb Analysis.ipynb``` for the ML-based methods. To run this notebook, please modify the data dir to your own dir. 
+We tired:
+
+- Pick up 11 important audio features and take some data preprocessing. 
+- Feature selection using the XGBoost model to tackle large-scale data and intricate feature relationships.
+- Naive Bayes Model, Logistic Regression Model, Support Vector Machine, Random Forest Model and XGboost Model.
 
 ## DL algorithms
 
