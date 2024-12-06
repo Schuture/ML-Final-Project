@@ -17,7 +17,8 @@ Please use ```requirements.txt``` to install all the dependencies.
 
 ## DL algorithms
 
-Please refer to ```DL VoxCeleb analysis.ipynb``` for the DL-based methods. We tired:
+Please refer to ```DL VoxCeleb analysis.ipynb``` for the DL-based methods. To run this notebook, please modify the data dir to your own dir. 
+We tired:
 
 - Traditional audio features as the input for MLP models (3 different sizes)
 - HuBert Model, which is too large for our computation resource and is abandoned
